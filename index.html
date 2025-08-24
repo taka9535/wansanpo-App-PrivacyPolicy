@@ -49,7 +49,7 @@
 <body>
     <h1>プライバシーポリシー</h1>
     
-    <p><strong>最終更新日</strong>: 2025年8月4日</p>
+    <p><strong>最終更新日</strong>: 2025年8月24日</p>
 
     <h2>1. はじめに</h2>
     <p>わん散歩（以下「本アプリ」）は、ユーザーのプライバシーを尊重し、個人情報の保護を最優先に考えています。本プライバシーポリシーは、本アプリがどのような情報を収集し、どのように使用するかを説明します。</p>
@@ -86,14 +86,25 @@
         </ul>
     </div>
 
-    <h3>2.4 広告関連情報</h3>
+    <h3>2.4 広告関連情報（AdMob）</h3>
     <div class="highlight">
         <ul>
-            <li><strong>収集項目</strong>: 広告表示のための匿名化されたデータ、デバイスID</li>
-            <li><strong>収集目的</strong>: 広告の表示と収益化、広告効果の測定</li>
-            <li><strong>提供者</strong>: Google AdMob</li>
-            <li><strong>トラッキング</strong>: 広告効果測定とターゲティングのため、デバイスIDと広告データをトラッキング目的で使用します</li>
-            <li><strong>詳細</strong>: <a href="https://policies.google.com/privacy" target="_blank">Google AdMobのプライバシーポリシー</a>をご確認ください</li>
+            <li><strong>収集項目</strong>: 広告の表示/クリック等に関するデータ、デバイス情報、広告識別子（IDFA）</li>
+            <li><strong>収集目的</strong>: 広告の表示・収益化、広告効果の測定、配信最適化</li>
+            <li><strong>提供者</strong>: Google AdMob（Google Mobile Ads SDK 12.8）</li>
+            <li><strong>トラッキング/同意</strong>: IDFA の取得は iOS の App Tracking Transparency の同意に依存します</li>
+            <li><strong>詳細</strong>: <a href="https://policies.google.com/privacy" target="_blank">Google プライバシーポリシー</a> / <a href="https://support.google.com/admob/" target="_blank">AdMob ヘルプ/ポリシー</a></li>
+        </ul>
+    </div>
+
+    <h3>2.5 解析情報（Firebase Analytics）</h3>
+    <div class="highlight">
+        <ul>
+            <li><strong>収集項目</strong>: アプリ内イベント（例: 散歩開始/完了、広告表示イベント 等）、デバイス情報（非識別）</li>
+            <li><strong>収集目的</strong>: アプリ品質向上のための統計分析、機能改善</li>
+            <li><strong>提供者</strong>: Firebase Analytics（Firebase iOS SDK 12.1.0）</li>
+            <li><strong>補足</strong>: 個人を特定する情報は送信していません。位置情報は第三者へ送信しません。</li>
+            <li><strong>詳細</strong>: <a href="https://firebase.google.com/support/privacy" target="_blank">Firebase プライバシー</a></li>
         </ul>
     </div>
 
@@ -115,6 +126,10 @@
     </ul>
 
     <h3>3.3 広告表示</h3>
+    <h3>3.4 解析</h3>
+    <ul>
+        <li>利用状況の把握とアプリ改善のため、匿名化イベントを集計します（Firebase Analytics）。</li>
+    </ul>
     <ul>
         <li>アプリ内での広告表示</li>
         <li>収益化による無料サービスの維持</li>
@@ -152,11 +167,11 @@
         <li>法律で要求される場合を除き、情報の開示は行いません</li>
     </ul>
 
-    <h3>5.2 広告パートナー</h3>
+    <h3>5.2 連携サービス</h3>
     <ul>
-        <li>Google AdMobとのみ広告データを共有</li>
-        <li>広告データは匿名化されており、個人を特定する情報は含まれません</li>
-        <li>デバイスIDと広告表示データは、広告効果測定とターゲティングのためトラッキング目的で使用されます</li>
+        <li><strong>Google AdMob</strong>（広告配信/計測）: データは匿名化され、トラッキングは ATT 同意に依存</li>
+        <li><strong>Firebase Analytics</strong>（利用状況の統計分析）</li>
+        <li>参考: <a href="https://policies.google.com/privacy" target="_blank">Google プライバシーポリシー</a>, <a href="https://support.google.com/admob/" target="_blank">AdMob</a>, <a href="https://firebase.google.com/support/privacy" target="_blank">Firebase</a></li>
     </ul>
 
     <h2>6. ユーザーの権利</h2>
@@ -175,9 +190,9 @@
 
     <h3>6.3 広告の制御</h3>
     <ul>
-        <li>設定アプリで広告トラッキングを制限できます</li>
-        <li>広告表示の制御はできませんが、データ収集は制限可能です</li>
-        <li>トラッキング許可の確認ダイアログが表示され、ユーザーが選択できます</li>
+        <li>設定アプリの「プライバシーとセキュリティ &gt; トラッキング」で本アプリのトラッキング許可を変更できます</li>
+        <li>IDFA のリセットやパーソナライズド広告の制限はデバイス設定から実行できます</li>
+        <li>トラッキングを拒否した場合、非パーソナライズド広告が配信される場合があります</li>
     </ul>
 
     <h3>6.4 トラッキングの制御</h3>
